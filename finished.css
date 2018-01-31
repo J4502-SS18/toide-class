@@ -20,18 +20,17 @@ h1 {
 
 #nav {
     padding: 0;
-	list-style-type: none;
+	  list-style-type: none;
 }
 
 #nav li {
     margin: 0;
     padding: 0;
-	border-bottom: 1px solid #ccc;
-	text-decoration: none;
+	  border-bottom: 1px solid #ccc;
 }
 
-#nav a:link, a:visited {
-	display:block;
+#nav a:link, #nav a:visited {
+	  display:block;
     color: #ffffff;
     background-color: #98bf21;
     font-weight: bold;
@@ -41,7 +40,7 @@ h1 {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#nav a:hover, a:active {
+#nav a:hover, #nav a:active {
     background-color: #7a991a;
 }
 
@@ -62,5 +61,5 @@ h1 {
 }
 
 img {
-	border: none; 
+	border: none;
 }
