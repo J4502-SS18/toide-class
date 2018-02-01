@@ -8,8 +8,8 @@ h1 {
   font-family: Georgia, "Times New Roman";
 }
 
-#container {
-   width: 80%; /* Must define a width to use margin*/
+.container {
+  width: 80%; /* Must define a width to use margin*/
   margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@ h1 {
 #nav a:link, #nav a:visited{
   text-decoration: none;
   color: #ffffff;
-  background-color: #98bf21;
+  background-color: #42d9f4;
   font-weight: bold;
   text-align: center;
   display: block;
@@ -36,25 +36,18 @@ h1 {
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #7a991a;
-}
-
-.caption {
-  color: black;
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-size: 0.8em;
-  margin-top: 0;
-  text-align: right;
+  background-color: #41b8f4;
 }
 
 #footer {
   color: black;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 0.8em;
-  border-top: 1px solid black;
+  border-top: 1px solid #c9c9c9;
 }
 
 img {
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
