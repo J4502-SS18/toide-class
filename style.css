@@ -1,16 +1,19 @@
 /*styles go here*/
 p {
-  color: #666666;
-  font-family: helvetica, Arial, sans-serif;
+  color: black;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman";
+  font-family: 'Merriweather', "Times New Roman", serif;
+  color: black;
+  background-color: #c2c2d6;
 }
 
 .container {
   width: 80%; /* Must define a width to use margin*/
   margin: 0 auto;
+  color: #e0e0eb
 }
 
 #nav {
@@ -41,13 +44,22 @@ h1 {
 
 #footer {
   color: black;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 0.8em;
-  border-top: 1px solid #c9c9c9;
+  border-top: 2px solid black;
+  background-color: #c2c2d6;
 }
 
 img {
   border: none;
   margin-left: auto;
   margin-right: auto;
+}
+
+a:link {
+  color: #00b8e6;
+}
+
+a:visited {
+  color: #005266;
 }
