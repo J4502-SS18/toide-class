@@ -1,7 +1,11 @@
 /*styles go here*/
+body {
+  margin: 0;
+}
+
 p {
-  color: black;
   font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
 }
 
 h1 {
@@ -9,38 +13,35 @@ h1 {
   color: black;
   background-color: #c2c2d6;
   font-style: italic;
+  font-size: 2em;
 }
 
-.container {
-  width: 80%; /* Must define a width to use margin*/
-  margin: 0 auto;
-  color: #e0e0eb
-}
-
-#nav {
-  list-style-type: none;
-  padding: 0;
-}
-
-#nav li {
-  width: 100%;
+.navigation {
+  list-style: none;
   margin: 0;
+  background: #42d9f4;
   padding: 0;
+  display: flex;
+  flex-flow: column;
 }
 
-#nav a:link, #nav a:visited{
+.navigation a {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #42d9f4;
-  font-weight: bold;
-  text-align: center;
+  color: white;
   display: block;
-  font-family: Helvetica, Arial, sans-serif;
-  padding: 4px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
-#nav a:hover, #nav a:active {
-  background-color: #41b8f4;
+.navigation li:last-of-type a {
+  border-bottom: none;
+}
+
+article {
+  flex: 1 100%;
+  padding: 10px;
 }
 
 #footer {
@@ -55,12 +56,46 @@ img {
   border: none;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
-a:link {
-  color: #00b8e6;
+.container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-a:visited {
-  color: #005266;
+@media (min-width: 800px) {
+  .navigation {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .navigation a{
+    border: none;
+  }
+
+  .navigation a:hover {
+    background: black;
+  }
+
+  .pic {
+    width: 40%;
+    margin-left: 10px;
+  }
+
+  .content {
+    width: 45%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  article {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    flex: 3 0px
+  }
+
 }
