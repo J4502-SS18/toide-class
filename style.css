@@ -8,12 +8,15 @@ p {
   font-size: 1em;
 }
 
-h1 {
+h1, h3 {
   font-family: 'Merriweather', "Times New Roman", serif;
   color: black;
   background-color: #c2c2d6;
   font-style: italic;
-  font-size: 2em;
+}
+
+.pullquote {
+  display: none;
 }
 
 .navigation {
@@ -59,12 +62,32 @@ img {
   width: 100%;
 }
 
-.container {
-  display: flex;
-  flex-flow: row wrap;
+.img2 {
+  display: none;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 600px) {
+
+  .pullquote {
+    display: block;
+    background: #ddf;
+    font-weight: bold;
+    padding: 13px;
+    margin: 0 13px 13px 0;
+  }
+
+  .img2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .navigation {
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -79,20 +102,32 @@ img {
   }
 
   .pic {
-    width: 40%;
     margin-left: 10px;
+    grid-area: b;
   }
 
   .content {
-    width: 45%;
     margin-left: 10px;
+    grid-area: a;
+  }
+
+  .img2 {
+    grid-area: c;
+  }
+
+  .pullquote {
+    grid-area: d;
   }
 
   article {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    flex: 3 0px
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "b b a a"
+    ". . d d"
+    ". . c c"
+
   }
 
 }
