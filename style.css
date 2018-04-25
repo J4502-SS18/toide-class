@@ -79,10 +79,6 @@ nav a {
     padding: 20px 30px;
 }
 
-.navigation {
-  display: none;
-}
-
 @media screen and (min-width: 700px) {
 
   .pullquote {
@@ -112,6 +108,21 @@ nav a {
 }
 
 @media screen and (min-width: 1000px) {
+
+  .map-wrapper {
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+  }
+
+  .map-wrapper iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+  }
 
   .container {
     width: 80%;
